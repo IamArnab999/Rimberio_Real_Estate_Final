@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Real Estate Website | Buy, Sell, Rent Properties</title>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Find your dream property with our Real Estate platform. Buy, sell, and rent with ease."
+    />
+    <meta
+      name="keywords"
+      content="real estate, property, buy, sell, rent, home, apartment"
+    />
+    <meta name="author" content="arnab825" />
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Real Estate Website" />
+    <meta
+      property="og:description"
+      content="Find, buy, sell, and rent properties easily."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/Others/VERT_logo2.webp" />
+    <!-- Security: Content Security Policy -->
+    <meta
+      http-equiv="Permissions-Policy"
+      content="geolocation=(), microphone=(), camera=()"
+    />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+      default-src 'self';
+      script-src 'self' https://checkout.razorpay.com https://www.gstatic.com https://www.googleapis.com https://www.chatbase.co https://www.googletagmanager.com https://www.google-analytics.com https://accounts.google.com https://apis.google.com https://login-contac-form-default-rtdb.firebaseio.com https://s-usc1f-nss-2552.firebaseio.com https://cdn.ampproject.org;
+      frame-src 'self' https://api.razorpay.com https://accounts.google.com https://*.firebaseapp.com https://www.chatbase.co https://s-usc1f-nss-2552.firebaseio.com;
+      connect-src 'self' data: https://checkout.razorpay.com https://api.razorpay.com https://www.googleapis.com https://www.gstatic.com https://www.chatbase.co https://firebase.googleapis.com https://identitytoolkit.googleapis.com https://www.googletagmanager.com https://www.google-analytics.com https://accounts.google.com https://apis.google.com https://securetoken.googleapis.com https://vp41bxr5-5000.inc1.devtunnels.ms https://8wdx2ktx-5000.inc1.devtunnels.ms http://localhost:5000 https://lumberjack.razorpay.com https://ipapi.co https://firebaseinstallations.googleapis.com https://images.unsplash.com wss://s-usc1f-nss-2553.firebaseio.com https://s-usc1f-nss-2553.firebaseio.com wss://s-usc1f-nss-2552.firebaseio.com https://s-usc1f-nss-2552.firebaseio.com https://nominatim.openstreetmap.org https://www.google.com;
+      object-src 'none';
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src 'self' https://fonts.gstatic.com data:;
+      img-src 'self' data: blob: https://mt0.google.com https://mt1.google.com https://mt2.google.com https://mt3.google.com https://*.tile.openstreetmap.org https://lh3.googleusercontent.com https://play.google.com https://developer.apple.com https://www.gstatic.com https://images.unsplash.com https://plus.unsplash.com https://unpkg.com https://www.googletagmanager.com https://cdnjs.cloudflare.com https://realestatewebsite.blob.core.windows.net https://randomuser.me https://server.arcgisonline.com https://i.pinimg.com;
+      media-src 'self' data:;
+    "
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/Others/VERT_logo2.webp" type="image/webp" />
+
+    <!-- Structured Data for SEO (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Real Estate Website",
+        "url": "https://yourdomain.com",
+        "logo": "https://yourdomain.com/assets/Others/VERT_logo2.webp"
+      }
+    </script>
+    <script
+      async
+      custom-element="amp-ad"
+      src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+    ></script>
+  </head>
+  <body>
+    <amp-ad
+      width="100vw"
+      height="320"
+      type="adsense"
+      data-ad-client="ca-pub-8938526985129069"
+      data-ad-slot="4573281152"
+      data-auto-format="rspv"
+      data-full-width=""
+    >
+      <div overflow=""></div>
+    </amp-ad>
+    <div id="root"></div>
+    <div id="toastify-root"></div>
+    <!-- Main React Bundle -->
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- Razorpay: Only load this script dynamically where needed in your React components -->
+    <script
+      src="https://checkout.razorpay.com/v1/checkout.js"
+      async
+      defer
+    ></script>
+
+    <!-- Example of a Lazy-Loaded Image -->
+    <!-- <img src="/assets/properties/sample.jpg" loading="lazy" alt="Sample Property"/> -->
+
+    <!-- robots.txt and sitemap.xml should be added to the /public directory -->
+
+    <!-- Custom Chat Bot -->
+    <script src="/chatbase-loader.js"></script>
+  </body>
+</html>

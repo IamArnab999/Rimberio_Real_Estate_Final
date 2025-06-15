@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blue-grad {
+    background: linear-gradient(97.65deg, #60bbee 0.33%, #0a72ad 93.35%);
+}
+
+
+.blue-grad-2 {
+    background: linear-gradient(97.73deg,
+            #399fd8 -6.96%,
+            #0775b4 23.5%,
+            #003756 92.79%);
+}
+
+.black-grad {
+    background: linear-gradient(219.84deg, #474747 4.14%, #222222 44.22%);
+}
+
+.logo-animation {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-animation:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.animate-spin {
+    animation: spin 1.2s linear infinite;
+}
+
+.animate-bounce {
+    animation: bounce 1.5s infinite;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes navSlideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.nav-animation {
+    animation: navSlideIn 0.5s ease-in-out;
+}
+
+.navBar-menu {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.navBar-menu.hide {
+    max-height: 0;
+}
+
+.navBar-menu.show {
+    max-height: 500px;
+    /* Adjust as needed */
+}
+
+nav a.active {
+    color: #3a6515;
+    font-weight: bold;
+}
+
+
+
+.star-icon {
+    transition: fill 0.3s ease;
+}
+
+.star-icon.filled {
+    fill: #fbbf24;
+    /* Yellow for filled stars */
+}
+
+.star-icon.empty {
+    fill: #d1d5db;
+    /* Gray for empty stars */
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button:hover {
+    /* background-color: #1e40af;  */
+    /* Darker blue */
+    transform: scale(1.05);
+    /* Slightly enlarge the button */
+}
+
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.star-icon {
+    transition: fill 0.3s ease;
+}
+
+.star-icon.filled {
+    fill: #fbbf24;
+    /* Yellow for filled stars */
+}
+
+.star-icon.empty {
+    fill: #d1d5db;
+    /* Gray for empty stars */
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
